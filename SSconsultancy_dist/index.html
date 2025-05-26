@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SS Consultancy - Work From Home Jobs</title>
+    <meta name="description" content="SS Consultancy connects talented professionals with work-from-home opportunities at leading companies. Apply today for part-time and full-time remote positions.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <svg class="icon" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                    <path d="M20 7H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"></path>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                <span>SS Consultancy</span>
+            </a>
+            <nav class="nav-menu">
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#jobs">Jobs</a></li>
+                    <li><a href="#apply">Apply</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Find Your Perfect <span>Work-From-Home</span> Opportunity</h1>
+                    <p>SS Consultancy connects talented professionals with remote positions at leading companies. Start your work-from-home journey today.</p>
+                    <div class="hero-buttons">
+                        <a href="#jobs" class="btn btn-primary">Browse Jobs</a>
+                        <a href="#apply" class="btn btn-outline">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About SS Consultancy</h2>
+                <p class="section-subtitle">We connect talented individuals with rewarding work-from-home opportunities at India's leading companies.</p>
+                
+                <div class="features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3>Expert Placement</h3>
+                        <p>Our team of recruiters specializes in matching qualified candidates with the perfect work-from-home positions.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Top Companies</h3>
+                        <p>We partner with leading companies like Flipkart, Amazon, Mahindra, Isuzu, and ITC to provide exclusive opportunities.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                            </svg>
+                        </div>
+                        <h3>Satisfying Careers</h3>
+                        <p>Find fulfilling work-from-home opportunities that offer competitive compensation and work-life balance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="jobs" class="jobs">
+            <div class="container">
+                <h2>Available Positions</h2>
+                <p class="section-subtitle">Explore our current work-from-home opportunities with leading companies.</p>
+                
+                <div class="job-filters">
+                    <button class="filter-btn active" data-filter="all">All Jobs</button>
+                    <button class="filter-btn" data-filter="Full Time">Full Time</button>
+                    <button class="filter-btn" data-filter="Part Time">Part Time</button>
+                </div>
+                
+                <div class="job-grid" id="jobGrid"></div>
+            </div>
+        </section>
+
+        <section id="apply" class="apply">
+            <div class="container">
+                <h2>Apply Now</h2>
+                <p class="section-subtitle">Complete the form below to apply for our work-from-home opportunities.</p>
+                
+                <div class="form-container">
+                    <form id="applicationForm" class="application-form">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="qualification">Qualification *</label>
+                                <input type="text" id="qualification" name="qualification" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact">Mobile Number / Email *</label>
+                                <input type="text" id="contact" name="contact" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="age">Age *</label>
+                                <input type="number" id="age" name="age" min="18" max="65" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="gender">Gender *</label>
+                                <select id="gender" name="gender" required>
+                                    <option value="">Select gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="location">Location *</label>
+                                <input type="text" id="location" name="location" required>
+                            </div>
+                            
+                            <div class="form-group full-width">
+                                <label for="jobInterest">Position of Interest *</label>
+                                <select id="jobInterest" name="jobInterest" required></select>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Continue to Payment</button>
+                    </form>
+
+                    <div id="paymentSection" class="payment-section hidden">
+                        <h3>Platform Fee Payment</h3>
+                        <p>Please pay the platform fee of ₹10 using UPI to complete your application.</p>
+                        
+                        <div class="upi-details">
+                            <p>UPI ID:</p>
+                            <div class="upi-id-container">
+                                <code id="upiId">kumar96967@axl</code>
+                                <button id="copyUpi" class="btn-icon" title="Copy UPI ID">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p id="copyMessage" class="copy-message"></p>
+                        </div>
+
+                        <div class="payment-buttons">
+                            <button id="confirmPayment" class="btn btn-primary">I've Completed the Payment</button>
+                            <button id="backToForm" class="btn btn-text">Back to Form</button>
+                        </div>
+                    </div>
+
+                    <div id="successMessage" class="success-message hidden">
+                        <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="2" fill="none">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        <h3>Application Submitted!</h3>
+                        <p>Thank you for your interest. Our team will review your application and contact you shortly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="partners" class="partners">
+            <div class="container">
+                <h2>Our Partner Companies</h2>
+                <p class="section-subtitle">We work with leading companies to bring you the best work-from-home opportunities.</p>
+                
+                <div class="partner-grid">
+                    <div class="partner-card">
+                        <div class="partner-logo">F</div>
+                        <h3>Flipkart</h3>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-logo">A</div>
+                        <h3>Amazon</h3>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-logo">M</div>
+                        <h3>Mahindra</h3>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-logo">I</div>
+                        <h3>Isuzu</h3>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-logo">I</div>
+                        <h3>ITC</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                            <path d="M20 7H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"></path>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                        <span>SS Consultancy</span>
+                    </div>
+                    <p>Connecting talented individuals with rewarding work-from-home opportunities across India since 2020.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Job Categories</h3>
+                    <ul>
+                        <li><a href="#jobs">Telecalling</a></li>
+                        <li><a href="#jobs">Data Entry</a></li>
+                        <li><a href="#jobs">Customer Support</a></li>
+                        <li><a href="#jobs">Freelance Writing</a></li>
+                        <li><a href="#jobs">Online Tutoring</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#jobs">Jobs</a></li>
+                        <li><a href="#apply">Apply Now</a></li>
+                        <li><a href="#partners">Our Partners</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <span>+91 9876543210</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>info@ssconsultancy.com</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>123 Business Center, Main Street<br>Bangalore, Karnataka 560001</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> SS Consultancy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
